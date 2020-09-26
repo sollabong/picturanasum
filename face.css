@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: white;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,158,0,1) 0%, rgba(255,214,0,1) 100%);
+    font-family: 'Walter Turncoat', cursive;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 3rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.draw{
+    font-size: 2rem;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+button{
+    text-align: center;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 1.4rem;
+    color: black;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.514); 
+    transition: ease-in-out 0.3s;
+    color: black;
+}
+
+button:active{
+    border: none;
+    outline: none;
+}
+button:focus{
+    border: none;
+    outline: none;
+}
+
+
+
+.wrap {
+    position: relative;
+    min-height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid rgba(255, 255, 255, 0.76);
+    border-radius: 15px;
+}
+
+.wrap>* {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.face {
+    position: absolute;
+}
+
+.cred{
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: center;
+}
