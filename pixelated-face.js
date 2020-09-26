@@ -34,7 +34,7 @@ function drawFace(face) {
   const {width, height, top, left} = face.boundingBox;
   ctx.fillStyle = "orange";
   ctx.beginPath();
-  ctx.arc(left-(width/2), top-(height/2), 5, 0, Math.PI*2, true);
+  ctx.arc(left+(width/2), top+(height/2), 5, 0, Math.PI*2, true);
   ctx.fill();
 
 
